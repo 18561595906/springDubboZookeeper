@@ -8,6 +8,7 @@
 
     <dubbo:registry address="zookeeper://10.249.37.7:2181" />
 
+    <!-- id的值是要调用的接口（接口就是org.moy.maven.service.UserService）的名字，并且首字母小写（小写了就是userService -->
     <dubbo:reference id="userService"
         interface="org.moy.maven.service.UserService" version="1.0.0" />
 </beans>

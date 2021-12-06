@@ -7,7 +7,7 @@
     <dubbo:application name="dubbo-user-service" />
 
     <dubbo:registry address="zookeeper://10.249.37.7:2181" />
-
+    <!-- service层中引用dubbo服务时，ref的值是想暴露的接口的实现类（注意是实现类，所以是ItemServiceImpl）的名字，并且首字母小写(小写了就是itemServiceImpl) ;interface指的是接口的绝对路径-->
     <dubbo:service
         interface="org.moy.maven.service.UserService" ref="userService"
         version="1.0.0" />
