@@ -19,4 +19,5 @@
     <import resource="spring-dubbo-provider.xml"/>
     <import resource="spring-dao.xml"/>
     <import resource="spring-tx.xml"/>
+    <import resource="spring-redis.xml"/>
 </beans>
